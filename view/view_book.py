@@ -1,6 +1,8 @@
+
+
 class ViewBook():
     def __init__(self, books = []):
-        self.books = books
+        self.books  = books
 
     def list(self):
         while True:
@@ -39,3 +41,7 @@ class ViewBook():
         else:
             sp.call('export TERM=xterm', shell=True)
             sp.call('clear', shell=True)
+
+
+# buku = ViewBook()
+# buku.list()

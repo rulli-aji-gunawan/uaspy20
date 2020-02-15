@@ -1,4 +1,5 @@
 class BaseApp:
+
     def run(self):
         while True:
             key = self.__menu()
@@ -36,6 +37,7 @@ class BaseApp:
         key = input("Pilih menu (1-4): ")
         return key
 
+
     def clear(self):
         import subprocess as sp
         import platform
@@ -46,3 +48,4 @@ class BaseApp:
         else:
             sp.call('export TERM=xterm', shell=True)
             sp.call('clear', shell=True)
+
